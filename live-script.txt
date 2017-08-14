@@ -1,0 +1,5 @@
+live-server --open=src/help.html --watch=src,css
+
+live-server --open=src/ --watch=src,css
+
+live-server --open=component/ --watch=src,css,component

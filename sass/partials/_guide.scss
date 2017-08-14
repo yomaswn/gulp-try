@@ -1,0 +1,42 @@
+@import "color";
+@import "typo";
+
+body {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+#debug {
+  background-color: yellow;
+  border: solid 0.5px blue;
+  color: #F8BBD0;
+}
+.page-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  padding: 30px 0px;
+  flex-shrink: 0;
+}
+.contain {
+  width: 1140px;
+}
+.debug {
+  background-color: yellow;
+  border: solid 0.5px blue;
+  color: #F8BBD0;
+}
+#breadcumb a {
+  color: $pink;
+  @include sm-body;
+}
+#breadcumb div.active.section {
+  color: $darkgrey;
+  @include sm-body;
+}
+#breadcumb span {
+  margin: 0px 5px;
+  color: $darkgrey;
+  @include sm-body;
+}

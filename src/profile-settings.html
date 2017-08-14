@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FDN - Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+</head>
+<body>
+    <div class="contain ">
+      <div class="ui breadcrumb" id="breadcumb">
+        <a class="section">Home</a>
+        <span class="icon-divider">></span>
+        <a class="section">My Profile</a>
+        <span class="icon-divider">></span>
+        <div class="active section">Settings</div>
+      </div>
+    </div>
+  <div class="setting-txt">
+    Settings
+  </div>
+  <img class="profile-picture" src="../image/img_profile_ifnotset.png" alt="">
+  <button type="button" class="button-icon-2" style="width:180px">
+    <span class="ic-icon-button-2">edit photo</span>
+  </button>
+  <div class="page-content">
+    <div class="contain">
+      <div class="name-email">
+        <div class="setting-row">
+          <div class="setting-title">
+            Username
+          </div>
+          <input class="input-field-disabled" value="rayly" type="text" disabled >
+        </div>
+        <div class="setting-row">
+          <div class="setting-title">
+            Email
+          </div>
+          <input class="input-field-disabled" value="rayly@femaledaily.com" type="text" disabled>
+        </div>
+      </div>
+      <div class="setting-title">
+        Full Name
+      </div>
+      <input type="text" class="input-field" value="raywily wilia">
+      <div class="name-email">
+        <div class="setting-row">
+          <div class="setting-title">
+            Date of Birth
+          </div>
+          <input class="input-field" type="date" >
+        </div>
+        <div class="setting-row">
+          <div class="setting-title">
+            Location
+          </div>
+          <div class="ui selection dropdown" id="location-select">
+            <span>DKI Jakarta</span>
+            <i class="icon dropdown"></i>
+            <div class="menu">
+              <div class="item" id="location-select-submenu">Choice 1</div>
+              <div class="item" id="location-select-submenu">Choice 2</div>
+              <div class="item" id="location-select-submenu">Choice 3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="setting-title">
+        Bio
+      </div>
+      <textarea class="textarea"rows="8" cols="80"></textarea>
+      <div class="setting-title">
+        Favorite Brands
+      </div>
+      <input type="text" class="input-field">
+      <div class="setting-title">
+        Social Media
+      </div>
+      <div class="name-email">
+        <div class="setting-row">
+          <input class="input-fb" type="text" placeholder="Input link to your Facebook">
+        </div>
+        <div class="setting-row">
+          <input class="input-twit" type="text" placeholder="Input link to your Twitter">
+        </div>
+      </div>
+      <div class="name-email">
+        <div class="setting-row">
+          <input class="input-ig" type="text" placeholder="Input link to your Instagram">
+        </div>
+        <div class="setting-row">
+          <input class="input-youtube" type="text" placeholder="Input link to your Youtube">
+        </div>
+      </div>
+      <div class="setting-row">
+        <input class="input-web" type="text" placeholder="Input link to your Blog / Website">
+      </div>
+      <div class="cv-btn-save">
+        <button type="button" class="btn-set-save">SAVE</button>
+      </div>
+    </div>
+  </div>
+
+    <script type="text/javascript">
+    $('.menu .item').tab();
+    $('.ui.accordion').accordion();
+    $('#location-select').dropdown();
+    $('#btn').click(function(){$('.modal').modal('show')});
+    </script>
+</body>
+</html>

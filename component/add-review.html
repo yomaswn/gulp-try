@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Product</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/add-review.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+</head>
+<body>
+
+  <div class="ar-form">
+    <div class="ar-addreview">
+      <span class="ar-ic-review">ADD REVIEW</span>
+      <span class="ar-cancel">CANCEL</span>
+    </div>
+    <!-- <div class="ar-txtarea"> -->
+      <textarea class="ar-txtarea"  name="name" rows="8" cols="80" placeholder="Click here to write something..."></textarea>
+      <div class="ar-clicked-cv">
+        <div class="ar-clicked">
+          <div class="ar-col1">
+            <div class="ar-txt">Overall Rating</div>
+            <div class="ar-starlist">
+              <i class="ar-star-pink"></i>
+              <i class="ar-star-pink"></i>
+              <i class="ar-star-pink"></i>
+              <i class="ar-star-pink"></i>
+              <i class="ar-star-grey"></i>
+            </div>
+            <div class="ar-txt">
+              How is The Product Price?
+            </div>
+            <div class="ar-btn-reaction">
+              <button type="button" name="button">expensive</button>
+              <button type="button" name="button">just right</button>
+              <button type="button" name="button">value for money</button>
+            </div>
+          </div>
+          <div class="ar-col2">
+            <div class="ar-txt">
+              Package Quality
+            </div>
+            <div class="ar-btn-txt">
+              <button type="button" name="button">poor</button>
+              <button type="button" name="button">can be improved</button>
+              <button type="button" name="button">okay</button>
+              <button type="button" name="button">good</button>
+              <button type="button" name="button">perfect</button>
+            </div>
+            <div class="ar-txt">
+              Would You Repurchase This Product
+            </div>
+            <div class="ar-btn-txt">
+              <button type="button" name="button">Yes</button>
+              <button type="button" name="button">No</button>
+            </div>
+          </div>
+        </div>
+        <div class="ar-bottom">
+          <div class="ar-share">
+            <input type="checkbox" value=""> <span class="ar-txt">Facebook</span>
+            <input type="checkbox" value=""> <span class="ar-txt">Twitter</span>
+          </div>
+          <div class="ar-submit">
+            <button type="button" name="button">SUBMIT REVIEW</button>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+
+
+    <script type="text/javascript">
+    $('.menu .item').tab();
+    $('.ui.accordion').accordion();
+    $('#location-select').dropdown();
+    $('#btn').click(function(){$('.modal').modal('show')});
+    </script>
+</body>
+</html>

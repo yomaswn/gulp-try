@@ -1,0 +1,124 @@
+@import "partials/normalize";
+@import "partials/color";
+@import "partials/typo";
+@import "partials/guide";
+@include gfont("Noto+Serif");
+@include gfont("Montserrat");
+
+@mixin ic-star {
+  padding: 0px 0px 4px 20px;
+  background-size: 20px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+
+.rating-starlist {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.rating-star-pink {
+  background: url('../image/ic_star_pink.png');
+  @include ic-star;
+}
+.rating-star-grey {
+  background: url('../image/ic_star_grey.png');
+  @include ic-star;
+}
+.rating {
+  width: 1140px;
+}
+.rating-row1 {
+  display: flex;
+  flex-flow: row;
+}
+.rating-row2 {
+  margin-top: 30px;
+  width: 1140px;
+  border: 1px solid $lgrey1;
+  display: flex;
+  flex-flow: row;
+}
+.rating-sqr {
+  width: 165px;
+  height: 165px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $pink;
+}
+.rating-sqr-num {
+  @include big-body;
+}
+.rating-sqr-star {
+  margin: 10px 0px;
+}
+.rating-gr {
+  width: 945px;
+  height: 165px;
+  margin-left: 30px;
+}
+.rating-star {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: 24px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.rating-bar {
+  width: 702px;
+  height: 10px;
+  background-color: #fafafa;
+  border: 1px solid $lgrey1;
+  border-radius: 5px;
+  margin-left: 26px;
+}
+.rating-bar-in {
+  // width: 50%;
+  height: 10px;
+  background-color: $pink;
+  border-radius: 5px;
+}
+.rating-barnum {
+  width: 68px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 30px;
+  @include submenu-txt;
+  color: $darkgrey;
+}
+
+.rating-package {
+  width: 50%;
+  height: 100px;
+  border-right: 1px solid $lgrey1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.rating-repur {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+}
+.rating-txt {
+  @include additional-info;
+  color: $grey;
+}
+.rating-num {
+  @include sm-body;
+  color: $darkgrey;
+  padding-top: 20px;
+}

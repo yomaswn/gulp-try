@@ -1,0 +1,106 @@
+@mixin gfont($font) {
+  $font: unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font})
+}
+@mixin monbold {
+  font-family: "Montserrat", Times, serif;
+  font-weight: 900;
+}
+@mixin monlight {
+  font-family: "Montserrat", Times, serif;
+  font-weight: lighter;
+}
+@mixin monreg {
+  font-family: "Montserrat", Times, serif;
+  font-weight: normal;
+}
+@mixin noreg {
+  font-family: "Noto Serif", Times, serif;
+  font-weight: normal;
+}
+@mixin nobold {
+  font-family: "Noto Serif", Times, serif;
+  font-weight: bold;
+}
+@mixin bighead {
+  @include nobold;
+  font-size: 40px;
+  // padding-bottom: 25px;
+}
+@mixin head1 {
+  @include nobold;
+  font-size: 30px;
+  // padding: 20px 0px;
+}
+@mixin head2 {
+  @include noreg;
+  font-size: 20px;
+  // padding: 15px 0px;
+}
+@mixin article {
+  @include noreg;
+  font-size: 24px;
+  // padding: 17px 0px;
+}
+@mixin sm-article {
+  @include noreg;
+  font-size: 18px;
+  // padding: 14px 0px;
+}
+@mixin sm-product {
+  @include nobold;
+  font-size: 18px;
+  // padding: 14px 0px;
+}
+@mixin big-body {
+  @include monlight;
+  font-size: 24px;
+  // padding: 20px 0px;
+}
+@mixin sm-body {
+  @include monlight;
+  font-size: 18px;
+  // padding: 15px 0px;
+}
+@mixin caption-txt {
+  @include monbold;
+  font-size: 24px;
+  // padding: 17px 0px;
+}
+@mixin author-category {
+  @include monreg;
+  font-size: 16px;
+  // padding: 11px 0px;
+}
+@mixin additional-info {
+  @include monreg;
+  font-size: 14px;
+  // padding: 10px 0px;
+}
+@mixin menu-txt {
+  @include monbold;
+  font-size: 14px;
+  // padding: 12px 0px;
+  word-spacing: 1px;
+}
+@mixin submenu-txt {
+  @include monlight;
+  font-size: 16px;
+  // padding: 13px 0px;
+}
+@mixin btn-txt {
+  @include monbold;
+  font-size: 14px;
+  // padding: 12px 0px;
+}
+@mixin time-total-txt {
+  @include monbold;
+  font-size: 14px;
+  // padding: 10px 0px;
+}
+@mixin duration-txt {
+  @include monbold;
+  font-size: 10px;
+  // padding: 8px 0px;
+  word-spacing: 0.5px;
+}

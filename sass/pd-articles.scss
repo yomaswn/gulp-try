@@ -1,0 +1,53 @@
+@import "partials/normalize";
+// @import "partials/button";
+@import "partials/color";
+@import "partials/typo";
+// @import "partials/comp";
+@import "partials/guide";
+// @import "partials/var";
+@include gfont("Noto+Serif");
+@include gfont("Montserrat");
+
+.pda {
+
+}
+.pda-list {
+  display: flex;
+  flex-flow: wrap;
+  width: 1170px;
+}
+.pda-item {
+  border: solid 1px $grey;
+  width: 360px;
+  margin: 15px;
+}
+.pda-item-contain {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-flow: column;
+}
+.pda-title {
+  @include sm-article;
+  text-transform: capitalize;
+
+}
+.pda-pict {
+  width: 100%;
+  margin: 20px 0px;
+}
+.pda-rowbtm {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.pda-time {
+  @include time-total-txt;
+  color: $grey;
+}
+.pda-share {
+  padding: 12px 0px 12px 24px;
+  background: url('../image/ic_share_border.png');
+  background-repeat: no-repeat;
+}

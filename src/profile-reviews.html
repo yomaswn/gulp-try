@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FDN - Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+</head>
+<body>
+  <div class="contain ">
+    <div class="ui breadcrumb" id="breadcumb">
+      <a class="section">Home</a>
+      <span class="icon-divider">></span>
+      <a class="section">My Profile</a>
+      <span class="icon-divider">></span>
+      <div class="active section">Review</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="contain">
+      <span class="followers-txt">My Reviews</span>
+    </div>
+    <div class="cardpr-list ">
+      <div class="cardpr-item ">
+        <div class="cardpr-contain">
+          <div class="cardpr-product">
+            <div class="cardpr-pict">
+              <img src="../image/brand-prod3.jpg" alt="">
+            </div>
+            <div class="cardpr-prod-det">
+              <span class="cardpr-rate">
+                4.1
+              </span>
+              <span class="cardpr-smstarlist">
+                  <i class="cardpr-smstar-pink"></i>
+                  <i class="cardpr-smstar-pink"></i>
+                  <i class="cardpr-smstar-pink"></i>
+                  <i class="cardpr-smstar-pink"></i>
+                  <i class="cardpr-smstar-grey"></i>
+              </span>
+              <span class="cardpr-total">
+                (120 reviews)
+              </span>
+            </div>
+            <div class="cardpr-titleprod">
+              Facial Treatment Essence
+            </div>
+            <div class="cardpr-var">
+              Blossom
+            </div>
+            <div class="cardpr-brand">
+              SK-II
+            </div>
+          </div>
+          <div class="cardpr-detail">
+            <div class="cardpr-detail-row1">
+              <div class="cardpr-propict">
+                <img src="../image/user.jpg" alt="">
+              </div>
+              <div class="cardpr-userdet">
+                <div class="cardpr-username">
+                  yomaswn in Treatmen - Serum &amp; Essence
+                </div>
+                <div class="cardpr-detprod">
+                  Combination Skin
+                </div>
+              </div>
+              <div class="cardpr-time">
+                45 mins Ago
+              </div>
+            </div>
+            <div class="cardpr-starlist">
+              <i class="cardpr-star-pink"></i>
+              <i class="cardpr-star-pink"></i>
+              <i class="cardpr-star-pink"></i>
+              <i class="cardpr-star-pink"></i>
+              <i class="cardpr-star-grey"></i>
+            </div>
+            <div class="cardpr-coment">
+              <p>sebenarnya jenis kulit wajah saya cenderung kering. tapi penasaran pengen coba etude sheet mask varian ini. gaada ragu sama sekali sih di awal karena udah tau produk etude itu oke punya. dan ternyataaa hasilnya menakjubkan. cocok banget di kulit wajah, ga ada iritasi sama sekali such as beruntusan apalagi jerawat, yang pastinya hasilnya langsung terpampang nyata. (oke lebay) </p>
+            </div>
+            <div class="cardpr-readmore">
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="cardpr-bottom">
+          <div class="cardpr-bottom-in">
+            <div class="cardpr-bottom1">
+              <a href="#" class="cardpr-ic-like">12 Likes</a>
+              <a href="#" class="cardpr-ic-comment">2 Comments</a>
+              <a href="#" class="cardpr-ic-share">5 Share</a>
+            </div>
+            <div class="cardpr-bottom2">
+              <a href="#" class="cardpr-ic-report">Report</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script type="text/javascript">
+    $('.menu .item').tab();
+    $('.ui.accordion').accordion();
+    $('#location-select').dropdown();
+    $('#btn').click(function(){$('.modal').modal('show')});
+    </script>
+</body>
+</html>

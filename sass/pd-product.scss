@@ -1,0 +1,166 @@
+@import "partials/normalize";
+// @import "partials/button";
+@import "partials/color";
+@import "partials/typo";
+// @import "partials/comp";
+@import "partials/guide";
+// @import "partials/var";
+@include gfont("Noto+Serif");
+@include gfont("Montserrat");
+
+@mixin ic-star {
+  width: 30px;
+  height: 30px;
+  padding: 0px 0px 12px 32px;
+  background-size: 30px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.pd-item {
+  padding: 30px 0px;
+  width: 1140px;
+  display: flex;
+  flex-flow: row;
+  flex-shrink: 0;
+}
+.pd-itemcol1 {
+  border: 0.5px solid $grey;
+  width: 458px;
+  height: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.pd-itemcol1 img {
+  width: 100%;
+}
+.pd-itemcol2 {
+  width: 652px;
+  margin-left: 30px;
+}
+.pd-prod-det {
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+.pd-rate {
+  @include caption-txt;
+  color: #000;
+}
+.pd-smstarlist {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.pd-smstar-pink {
+  background: url('../image/ic_star_pink.png');
+  @include ic-star;
+}
+.pd-smstar-grey {
+  background: url('../image/ic_star_grey.png');
+  @include ic-star;
+}
+.pd-total {
+  @include time-total-txt;
+  color: $grey;
+  margin-left: 10px;
+}
+.pd-titleprod {
+  @include head1;
+  padding-top: 30px;
+  color: #000;
+}
+.pd-price {
+  @include author-category;
+  padding-top: 30px;
+  color: $grey;
+}
+.pd-shade {
+  @include author-category;
+  padding-top: 20px;
+  color: $grey;
+}
+.pd-shade-list {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row;
+}
+.pd-shade-item {
+  width: 40px;
+  height: 40px;
+  background-color: $grey;
+  margin-right: 10px;
+}
+.pd-shade-item-selected {
+  width:40px;
+  height:40px;
+  background-color: $pink;
+  margin-right: 10px;
+  border: 3px solid $grey;
+}
+.pd-brand {
+  @include author-category;
+  padding-top: 20px;
+  color: $darkgrey;
+}
+.pd-btn-review {
+  @include menu-txt;
+  margin-top: 30px;
+  width: 100%;
+  height: 42px;
+  text-transform:uppercase;
+  color: #DB284E;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #DB284E;
+  box-shadow: 0px 1px 1px #DB284E;
+}
+.pd-btn-review:active {
+  color: #fff;
+  background-color: #DB284E;
+}
+.pd-btn-review-ic {
+  padding: 6px 0px 6px 38px;
+  background: url('../image/ic_add_review.png');
+  background-position: 0px 50%;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.pd-btn-action {
+  padding-top: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.pd-btn {
+  width: 204px;
+  height: 42px;
+  text-transform:uppercase;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid $grey;
+  @include menu-txt;
+}
+.pd-btn-wish-ic {
+  padding: 6px 0px 6px 38px;
+  background: url('../image/ic_like.png');
+  background-position: 0px 50%;
+  background-repeat: no-repeat;
+}
+.pd-btn-try-ic {
+  padding: 6px 0px 6px 38px;
+  background: url('../image/ic_like.png');
+  background-position: 0px 50%;
+  background-repeat: no-repeat;
+}
+.pd-btn-share-ic {
+  padding: 6px 0px 6px 38px;
+  background: url('../image/ic_share.png');
+  background-position: 0px 50%;
+  background-repeat: no-repeat;
+}

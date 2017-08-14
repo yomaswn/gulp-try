@@ -1,0 +1,115 @@
+@import "partials/normalize";
+// @import "partials/button";
+@import "partials/color";
+@import "partials/typo";
+// @import "partials/comp";
+@import "partials/guide";
+// @import "partials/var";
+@include gfont("Noto+Serif");
+@include gfont("Montserrat");
+
+.post-list {
+  display: flex;
+  flex-flow: wrap;
+  width: 1170px;
+  align-items: flex-start;
+}
+.post-item{
+  border: solid 1px $grey;
+  width: 360px;
+  margin: 15px;
+  display: flex;
+  flex-flow: column;
+}
+.post-row1 {
+  display: flex;
+  flex-flow: row;
+  padding: 30px;
+}
+.post-profpict {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+.post-row1-col2 {
+  margin-left: 20px;
+  display: flex;
+  flex-flow: column;
+}
+.post-name {
+  @include author-category;
+  color: $darkgrey;
+  margin-bottom: 10px;
+}
+.post-time {
+  @include time-total-txt;
+  color: $grey;
+}
+.post-prodpict {
+  width: 100%;
+}
+.post-descript {
+  padding: 30px;
+  @include sm-body;
+  color: $darkgrey;
+}
+.post-row4 {
+  display: flex;
+  flex-flow: row;
+  border-top: 1px solid $grey;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+}
+.post-act1 {
+  height: 24px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  // justify-content: center;
+  width: 80%;
+}
+.post-act2 {
+  height: 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%
+}
+.post-like {
+  padding: 12px 0px 12px 34px;
+  margin-right: 30px;
+  background: url('../image/ic_like.png');
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  @include author-category;
+  color: $grey;
+  cursor: pointer;
+}
+.post-comment {
+  padding: 12px 0px 12px 34px;
+  margin-right: 30px;
+  background: url('../image/ic_comment.png');
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  @include author-category;
+  color: $grey;
+  cursor: pointer;
+}
+.post-share {
+  padding: 12px 0px 12px 34px;
+  margin-right: 30px;
+  background: url('../image/ic_share.png');
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  @include author-category;
+  color: $grey;
+  cursor: pointer;
+}
+.post-report {
+  padding: 12px 0px 12px 24px;
+  background: url('../image/ic_report.png');
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  cursor: pointer;
+}
